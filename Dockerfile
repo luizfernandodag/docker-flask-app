@@ -6,12 +6,13 @@ FROM python:3.9.5-buster
 
 ADD . /code
 
+
 #change dir
 WORKDIR /code
 
 #installing lib
 
-RUN pip install flask
+RUN pip install -r req.txt
 
 #Exposing the port
 EXPOSE 5001
